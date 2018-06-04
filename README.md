@@ -1,10 +1,13 @@
 Description
 =====
 
-This is example compose file for running Fess and Elasticsearch with Docker Compose.
+オープンソース全文検索サーバー『Fess』をdocker-composeで立ち上げる。
 
 Usage
 =====
 
-`$ docker-compose up -d`
+```
+sysctl -w vm.max_map_count=262144
+docker-compose up -d
+```
 
